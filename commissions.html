@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Commission information and inquiry form."><title>Commissions | Sam's Art Archive</title>
+  <link rel="stylesheet" href="style.css"><script src="script.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to main content</a>
+  <header class="site-header">
+    <a class="brand" href="index.html"><span class="brand-mark" aria-hidden="true">⚠</span> SAM'S ART ARCHIVE</a>
+    <nav aria-label="Main navigation"><ul class="nav-list"><li><a href="index.html">Home</a></li><li><a href="gallery.html">Art Gallery</a></li><li><a aria-current="page" href="commissions.html">Commissions</a></li></ul></nav>
+    <button class="theme-toggle" type="button" aria-pressed="false">Switch to dark theme</button>
+  </header>
+  <main id="main">
+    <section class="page-intro"><p class="eyebrow">// FILE 003 //</p><h1>Art Commissions</h1><p>Commission information and inquiry form.</p></section>
+    <section class="content-section" aria-labelledby="pricing-heading">
+      <div class="section-heading"><h2 id="pricing-heading">Commission information</h2><p>Pricing and availability have not been supplied in the project sources, so the table below does not invent prices.</p></div>
+      <div class="table-wrap"><table><caption>Commission options — details to be confirmed</caption><thead><tr><th scope="col">Commission type</th><th scope="col">Description</th><th scope="col">Price</th><th scope="col">Availability</th></tr></thead><tbody>
+        <tr><th scope="row">Character artwork</th><td>Character illustration</td><td>Contact for quote</td><td>Ask before ordering</td></tr>
+        <tr><th scope="row">Character design</th><td>Original character design</td><td>Contact for quote</td><td>Ask before ordering</td></tr>
+        <tr><th scope="row">Other artwork</th><td>Discuss a custom request</td><td>Contact for quote</td><td>Ask before ordering</td></tr>
+      </tbody></table></div>
+      <p class="note">Before publishing, replace these general categories with your actual commission types, prices, terms, and availability.</p>
+    </section>
+    <section class="content-section" aria-labelledby="form-heading">
+      <div class="section-heading"><p class="eyebrow">// INQUIRY FORM //</p><h2 id="form-heading">Send a commission inquiry</h2><p>All fields marked required must be completed. This prototype validates the form locally; it does not send email or store submissions.</p></div>
+      <form id="commission-form" class="panel form-panel" novalidate>
+        <div class="form-field"><label for="customer-name">Your name <span aria-hidden="true">*</span></label><input id="customer-name" name="customerName" type="text" autocomplete="name" required minlength="2"><small>Enter at least 2 characters.</small></div>
+        <div class="form-field"><label for="customer-email">Email address <span aria-hidden="true">*</span></label><input id="customer-email" name="customerEmail" type="email" autocomplete="email" required><small>Use an email address where I can contact you.</small></div>
+        <div class="form-field"><label for="commission-type">Commission type <span aria-hidden="true">*</span></label><select id="commission-type" name="commissionType" required><option value="">Choose an option</option><option>Character artwork</option><option>Character design</option><option>Other / custom request</option></select></div>
+        <div class="form-field"><label for="request-details">Request details <span aria-hidden="true">*</span></label><textarea id="request-details" name="requestDetails" rows="5" required minlength="10" placeholder="Describe your idea, character, and any relevant details."></textarea><small>Include at least 10 characters.</small></div>
+        <div class="form-field checkbox-field"><input id="terms-confirm" name="termsConfirm" type="checkbox" required><label for="terms-confirm">I understand this is an inquiry and not a confirmed commission. <span aria-hidden="true">*</span></label></div>
+        <button class="button-link form-submit" type="submit">Validate inquiry</button>
+        <p id="form-status" class="form-status" role="status" aria-live="polite"></p>
+      </form>
+    </section>
+  </main>
+  <footer class="site-footer"><p>Sam's Art Archive</p><p><a href="index.html">Home</a> · <a href="gallery.html">Art Gallery</a></p></footer>
+</body>
+</html>
